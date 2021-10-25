@@ -49,13 +49,13 @@ body {
   background-color: blue;
 }
 
-#clear-board {
+button {
   border: black solid 1px;
   margin-bottom: 15px;
   padding: 5px;
 }
 
-#clear-board:hover {
+button:hover {
   transform: scale(1.07);
   font-weight: 600;
 }

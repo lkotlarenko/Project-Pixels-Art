@@ -78,3 +78,8 @@ btnReset.addEventListener('click', () => {
     pixelCell[i].style.backgroundColor = 'white';
   }
 });
+
+const btnNewColors = document.getElementById('refresh-colors');
+btnNewColors.addEventListener('click', () => {
+  newcolors();
+});
