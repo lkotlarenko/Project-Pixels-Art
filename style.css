@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
+  text-align: center;
+}
+
+#title {
+  margin: 15px;
+  font-size: 30px;
+}
+
+#color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.color {
+  border: black solid 1px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.color:hover {
+  transform: scale(1.07);
+}
+
+#black {
+  background-color: black;
+}
+
+#red {
+  background-color: red;
+}
+
+#green {
+  background-color: green;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
