@@ -55,9 +55,15 @@ button {
   padding: 5px;
 }
 
-button:hover {
+button:hover,
+#board-size:hover {
   transform: scale(1.07);
   font-weight: 600;
+}
+
+#board-size {
+  height: 24px;
+  width: 35px;
 }
 
 .container {
@@ -78,5 +84,5 @@ button:hover {
   padding: 5px;
   width: 40px;
   height: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
