@@ -56,8 +56,8 @@ body {
 }
 
 #clear-board:hover {
-    transform: scale(1.07);
-    font-weight: 600;
+  transform: scale(1.07);
+  font-weight: 600;
 }
 
 .container {
@@ -68,9 +68,8 @@ body {
 
 #pixel-board {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
-  list-style: none;
   width: 300px;
 }
 
@@ -79,4 +78,5 @@ body {
   padding: 5px;
   width: 40px;
   height: 40px;
+  background-color: rgb(255, 255, 255);
 }
