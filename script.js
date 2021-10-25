@@ -70,3 +70,11 @@ document.querySelectorAll('.pixel').forEach((element) => {
     pixelTarget.style.backgroundColor = colorSel;
   });
 });
+
+const btnReset = document.getElementById('clear-board');
+btnReset.addEventListener('click', () => {
+  const pixelCell = document.getElementsByClassName('pixel');
+  for (let i = 0; i < pixelCell.length; i += 1) {
+    pixelCell[i].style.backgroundColor = 'white';
+  }
+});
