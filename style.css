@@ -19,6 +19,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
+  margin-bottom: 15px;
 }
 
 .color {
@@ -50,4 +51,25 @@ body {
 
 #yellow {
   background-color: yellow;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+#pixel-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  width: 300px;
+}
+
+.pixel {
+  border: black solid 1px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
 }
