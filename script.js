@@ -1,5 +1,6 @@
 const defaultBoard = 25;
 const boardLocation = document.getElementById('pixel-board');
+const colorizer = document.querySelectorAll('.color');
 
 function randomColor() {
   const r = Math.floor(Math.random() * 255);
@@ -34,6 +35,19 @@ function generateBoard(size) {
   }
 }
 
+colorizer.forEach((element) => {
+  element.addEventListener('click', (elementTarget) => {
+    const selected = document.getElementsByClassName('color');
+    for (let i = 0; i < selected.length; i += 1) {
+      if (selected[i].className === 'color selected') {
+        selected[i].className = 'color';
+      }
+    }
+    const targetColor = elementTarget;
+    targetColor.target.className += ' selected';
+  });
+});
+
 function newcolors() {
   color1 = randomColor();
   color2 = randomColor();
@@ -45,3 +59,14 @@ function newcolors() {
 
 window.onload = newcolors();
 generateBoard(defaultBoard);
+
+// setando primeira cor manualmente
+document.querySelector('#black').style.backgroundColor = 'black';
+
+document.querySelectorAll('.pixel').forEach((element) => {
+  element.addEventListener('click', (elementTarget) => {
+    const pixelTarget = elementTarget.target;
+    const colorSel = document.querySelector('.selected').style.backgroundColor;
+    pixelTarget.style.backgroundColor = colorSel;
+  });
+});
