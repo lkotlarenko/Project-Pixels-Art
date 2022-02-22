@@ -14,6 +14,6 @@
 
 ## Time
 
-- Time spend on this project: '1' day.
+- Time spent on this project: '1' day.
 
 ---
