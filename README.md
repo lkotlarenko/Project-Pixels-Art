@@ -8,7 +8,7 @@
 
 ## What was developed
 
-- A web page that contains a functional color palette that can be used to create pixel designs. Made using `JavaScript`,` CSS` and `html`.
+- A web page that contains a functional color palette that can be used to create pixel designs. Made using 'JavaScript',' CSS' and 'HTML'.
 
 ---
 
